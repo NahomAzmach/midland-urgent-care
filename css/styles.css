@@ -213,8 +213,9 @@ address {
     object-fit: contain;
 }
 /* FAQ Section */
+/* FAQ Section */
 .faq-section {
-    background-color: #fff;
+    background-color: white;
     padding: 50px 20px;
     text-align: center;
 }
@@ -253,8 +254,10 @@ address {
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-out;
     background-color: #f0f4f8;
+    margin-top: 5px;
+    border-left: 4px solid #007acc;
 }
 
 .faq-answer p {
@@ -263,6 +266,7 @@ address {
     color: #333;
     margin: 0;
 }
+
 
 
 /* Chat Button */

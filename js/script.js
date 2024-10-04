@@ -16,6 +16,7 @@ document.querySelector('.chat-button').addEventListener('click', function() {
 });
 
 // FAQ Accordion Dropdown
+// FAQ Accordion Dropdown
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', function() {
         // Toggle the active class on the clicked question
@@ -26,9 +27,10 @@ document.querySelectorAll('.faq-question').forEach(question => {
 
         // Toggle the max-height of the answer to either expand or collapse
         if (answer.style.maxHeight) {
-            answer.style.maxHeight = null;
+            answer.style.maxHeight = null; // Collapse the answer
         } else {
-            answer.style.maxHeight = answer.scrollHeight + "px";
+            answer.style.maxHeight = answer.scrollHeight + "px"; // Expand the answer
         }
     });
 });
+
