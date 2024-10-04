@@ -61,6 +61,12 @@ nav ul li:hover .dropdown {
     z-index: 1;
 }
 
+/* Show dropdown on hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Dropdown list styling */
 .dropdown li {
     float: none;
 }
@@ -76,12 +82,17 @@ nav ul li:hover .dropdown {
     background-color: #007acc;
 }
 
+
 /* Hero Section */
 .hero {
-    background: url('images/main-background.jpg') no-repeat center center/cover;
+    background: url('images/main-background.png') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    height: 100vh; /* Ensure it fills the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero h1 {
