@@ -14,3 +14,21 @@ document.querySelector('.chat-button').addEventListener('click', function() {
     alert('Chat feature coming soon!');
     // You can replace this alert with actual chat window integration
 });
+
+// FAQ Accordion Dropdown
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function() {
+        // Toggle the active class on the clicked question
+        this.classList.toggle('active');
+
+        // Get the corresponding answer div
+        const answer = this.nextElementSibling;
+
+        // Toggle the max-height of the answer to either expand or collapse
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});

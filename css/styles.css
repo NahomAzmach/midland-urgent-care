@@ -212,6 +212,58 @@ address {
     height: 60px;
     object-fit: contain;
 }
+/* FAQ Section */
+.faq-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.faq-question {
+    background-color: #007acc;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #005f99;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f0f4f8;
+}
+
+.faq-answer p {
+    padding: 15px 0;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
 
 /* Chat Button */
 .chat-button {
