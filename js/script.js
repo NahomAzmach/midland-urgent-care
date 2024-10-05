@@ -34,3 +34,10 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
 });
 
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const heroSection = document.querySelector('.hero');
+    heroSection.style.backgroundPositionY = scrollPosition * 0.5 + 'px'; // Adjusts scrolling speed
+});
+
+
